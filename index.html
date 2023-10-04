@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <section id="menu" class="menu">
+        <div class="logo">
+            <!-- add image logo here -->
+            <h2>Admin</h2>
+        </div>
+        <div class="items">
+            <li><i class="fa-solid fa-chart-pie"></i><a href="#">Dashboard</a></li>
+            <li><i class="fab fa-uikit"></i><a href="#">Elements</a></li>
+            <li><i class="fas fa-th-large"></i><a href="#">Tables</a></li>
+            <li><i class="fas fa-edit"></i><a href="#">Forms</a></li>
+            <li><i class="fab fa-cc-visa"></i><a href="#">Cards</a></li>
+            <li><i class="fas fa-hamburger"></i><a href="#">Modal</a></li>
+            <li><i class="fas fa-chart-line"></i><a href="#">Blank</a></li>
+        </div>
+    </section>
+
+    <section id="main">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <button id="bars"><i class="fa-solid fa-bars"></i></button>
+              <form class="d-flex" role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="submit">Search</button>
+              </form>
+              <div class="profile navbar-brand">
+                <i class="fa-solid fa-bell"></i>
+                <a href="#"><img src="assets/pexels-monstera-production-5876695.jpg" alt="profile photo"></a>
+            </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h2>Dashboard</h2>
+            <div class="cards">
+                <div class="card" style="width: 220px;">
+                    <div class="img">
+                        <img src="assets/users.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">8,267</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Users</h6>
+                    </div>
+                </div>
+                <div class="card" style="width: 220px;">
+                    <div class="img">
+                        <img src="assets/users.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">200,234</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Total Orders</h6>
+                    </div>
+                </div>
+                <div class="card" style="width: 220px;">
+                    <div class="img">
+                        <img src="assets/users.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">235,643</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Products sold</h6>
+                    </div>
+                </div>
+                <div class="card" style="width: 220px;">
+                    <div class="img">
+                        <img src="assets/users.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">$233.78</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">This Month</h6>
+                    </div>
+                </div>
+            </div>
+            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">NAME</th>
+                        <th scope="col">TITLE</th>
+                        <th scope="col">STATUS</th>
+                        <th scope="col">ROLE</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="profile">
+                                <img src="assets/pexels-monstera-production-5876695.jpg" alt="profile photo">
+                                <h6>Hannah Baker</h6>
+                            </div>
+                        </td>
+                        <td>
+                            <h6 class="card-title">Software Engineer</h5>
+                            <p class="card-subtitle text-body-secondary">Web Dev</h6>
+                        </td>
+                        <td>
+                            <span class="badge text-bg-success">Active</span>
+                        </td>
+                        <td>
+                            <h6 class="card-subtitle text-body-secondary">Owner</h6>
+                        </td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="profile">
+                                <img src="assets/pexels-monstera-production-5876695.jpg" alt="profile photo">
+                                <h6>Hannah Baker</h6>
+                            </div>
+                        </td>
+                        <td>
+                            <h6 class="card-title">Software Engineer</h5>
+                            <p class="card-subtitle text-body-secondary">Web Dev</h6>
+                        </td>
+                        <td>
+                            <span class="badge text-bg-success">Active</span>
+                        </td>
+                        <td>
+                            <h6 class="card-subtitle text-body-secondary">Owner</h6>
+                        </td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="profile">
+                                <img src="assets/pexels-monstera-production-5876695.jpg" alt="profile photo">
+                                <h6>Hannah Baker</h6>
+                            </div>
+                        </td>
+                        <td>
+                            <h6 class="card-title">Software Engineer</h5>
+                            <p class="card-subtitle text-body-secondary">Web Dev</h6>
+                        </td>
+                        <td>
+                            <span class="badge text-bg-success">Active</span>
+                        </td>
+                        <td>
+                            <h6 class="card-subtitle text-body-secondary">Owner</h6>
+                        </td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="profile">
+                                <img src="assets/pexels-monstera-production-5876695.jpg" alt="profile photo">
+                                <h6>Hannah Baker</h6>
+                            </div>
+                        </td>
+                        <td>
+                            <h6 class="card-title">Software Engineer</h5>
+                            <p class="card-subtitle text-body-secondary">Web Dev</h6>
+                        </td>
+                        <td>
+                            <span class="badge text-bg-success">Active</span>
+                        </td>
+                        <td>
+                            <h6 class="card-subtitle text-body-secondary">Owner</h6>
+                        </td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="profile">
+                                <img src="assets/pexels-monstera-production-5876695.jpg" alt="profile photo">
+                                <h6>Hannah Baker</h6>
+                            </div>
+                        </td>
+                        <td>
+                            <h6 class="card-title">Software Engineer</h5>
+                            <p class="card-subtitle text-body-secondary">Web Dev</h6>
+                        </td>
+                        <td>
+                            <span class="badge text-bg-success">Active</span>
+                        </td>
+                        <td>
+                            <h6 class="card-subtitle text-body-secondary">Owner</h6>
+                        </td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="profile">
+                                <img src="assets/pexels-monstera-production-5876695.jpg" alt="profile photo">
+                                <h6>Hannah Baker</h6>
+                            </div>
+                        </td>
+                        <td>
+                            <h6 class="card-title">Software Engineer</h5>
+                            <p class="card-subtitle text-body-secondary">Web Dev</h6>
+                        </td>
+                        <td>
+                            <span class="badge text-bg-success">Active</span>
+                        </td>
+                        <td>
+                            <h6 class="card-subtitle text-body-secondary">Owner</h6>
+                        </td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="profile">
+                                <img src="assets/pexels-monstera-production-5876695.jpg" alt="profile photo">
+                                <h6>Hannah Baker</h6>
+                            </div>
+                        </td>
+                        <td>
+                            <h6 class="card-title">Software Engineer</h5>
+                            <p class="card-subtitle text-body-secondary">Web Dev</h6>
+                        </td>
+                        <td>
+                            <span class="badge text-bg-success">Active</span>
+                        </td>
+                        <td>
+                            <h6 class="card-subtitle text-body-secondary">Owner</h6>
+                        </td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        const toggleButton = document.getElementById('bars');
+        const sidebar = document.querySelector('.menu');
+        const mainContent = document.getElementById('main');
+
+        toggleButton.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            mainContent.classList.toggle('expanded');
+        });
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/50a82cfbfd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
