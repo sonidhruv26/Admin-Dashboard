@@ -16,10 +16,14 @@ body {
 /* Sidebar */
 
 .menu {
-    min-width: 250px;
+    width: 250px;
     color: #fff;
     background-color: rgb(17, 17, 46);
     transition: width 0.3s ease;
+}
+
+.menu.collapsed {
+    width: 250px;
 }
 
 #menu .logo {
@@ -59,7 +63,7 @@ body {
     color: #fff;
 }
 
-#menu .items li:nth-child(1) {
+.active {
     background-color: rgb(70, 70, 130);
     border-left: 5px solid #fff;
 }
@@ -69,10 +73,12 @@ body {
     font-size: 20px;
 }
 
-/* Navbar */
-
 #main {
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
+}
+
+#main.expanded {
+    width: calc(100% - 250px);
 }
 
 #main .navbar #bars {
@@ -98,6 +104,7 @@ body {
 }
 
 nav .btn {
+    margin-left: 8px;
     background-color: rgb(70, 70, 130);
     color: #fff;
 }
@@ -130,10 +137,6 @@ nav .profile i {
 
 /* Main */
 
-#main.expanded {
-    width: calc(100% - 70px);
-}
-
 #main .container .cards {
     display: flex;
     justify-content: space-between;
@@ -161,13 +164,21 @@ nav .profile i {
 
 @media (max-width: 768px) {
 
-    .menu.collapsed {
+    .menu {
         width: 0;
-      }
+    }
+
+    .menu.collapsed {
+        width: 250px;
+    }
     
-      #main.expanded {
+    #main {
         width: 100%;
-      }
+    }
+
+    #main.expanded {
+        width: calc(100% - 250px);
+    }
 
     #menu .items li:nth-child(1) {
         display: none;
@@ -176,21 +187,38 @@ nav .profile i {
     #main .navbar #bars {
         display: inline;
     }
+
+    #main .container .cards .card {
+        flex-direction: column;
+        gap: 10px;
+        width: 100% !important;
+    }
+
+    .table {
+        display: block;
+        overflow: scroll;
+    }
 }
 @media (max-width: 425px) {
     
-    .menu.collapsed {
+    .menu {
         width: 0;
-      }
+    }
+
+    .menu.collapsed {
+        width: 250px;
+    }
     
-      #main.expanded {
+    #main {
         width: 100%;
-      }
+    }
+
+    #main.expanded {
+        width: calc(100% - 250px);
+    }
+
     #menu .items li:nth-child(1) {
         display: none;
-    }
-    #main {
-        min-width: 100%;
     }
     #main .navbar #bars {
         display: inline;
@@ -199,5 +227,9 @@ nav .profile i {
         flex-direction: column;
         gap: 10px;
         width: 100% !important;
+    }
+    .table {
+        display: block;
+        overflow: scroll;
     }
 }
