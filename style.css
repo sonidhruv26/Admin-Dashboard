@@ -18,13 +18,13 @@ body {
 .menu {
     width: 250px;
     color: #fff;
-    height: 100vh;
+    min-height: 100vh !important;
     background-color: rgb(17, 17, 46);
     transition: width 0.3s ease;
 }
 
 .menu.collapsed {
-    width: 250px;
+    width: 0;
 }
 
 #menu .logo {
@@ -69,6 +69,10 @@ body {
     border-left: 5px solid #fff;
 }
 
+.active.collapsed {
+    display: none;
+}
+
 #menu .items li:hover {
     background-color: rgb(48, 48, 58);
     font-size: 20px;
@@ -79,7 +83,7 @@ body {
 }
 
 #main.expanded {
-    width: calc(100% - 250px);
+    width: 100%;
 }
 
 #main .navbar #bars {
@@ -138,7 +142,7 @@ nav .profile i {
 
 /* Main */
 
-#main .container .cards {
+#main .container-fluid .cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -146,17 +150,17 @@ nav .profile i {
     margin-bottom: 50px;
 }
 
-#main .container .cards .card {
+#main .container-fluid .cards .card {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#main .container .cards .card img {
+#main .container-fluid .cards .card img {
     width: 50px;
 }
 
-#main .container .cards .card .img {
+#main .container-fluid .cards .card .img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,16 +184,23 @@ nav .profile i {
     #main.expanded {
         width: calc(100% - 250px);
     }
-
-    #menu .items li:nth-child(1) {
+    
+    .active {
         display: none;
     }
-    
+
+    .active.collapsed {
+        display: block;
+        background-color: rgb(70, 70, 130);
+        border-left: 5px solid #fff;
+    }
+
+
     #main .navbar #bars {
         display: inline;
     }
 
-    #main .container .cards .card {
+    #main .container-fluid .cards .card {
         flex-direction: column;
         gap: 10px;
         width: 100% !important;
@@ -218,13 +229,20 @@ nav .profile i {
         width: calc(100% - 250px);
     }
 
-    #menu .items li:nth-child(1) {
+    .active {
         display: none;
     }
+
+    .active.collapsed {
+        display: block;
+        background-color: rgb(70, 70, 130);
+        border-left: 5px solid #fff;
+    }
+
     #main .navbar #bars {
         display: inline;
     }
-    #main .container .cards .card {
+    #main .container-fluid .cards .card {
         flex-direction: column;
         gap: 10px;
         width: 100% !important;
