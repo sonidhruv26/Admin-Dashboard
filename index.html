@@ -30,7 +30,7 @@
 
   <section id="main">
     <nav class="navbar bg-body-tertiary">
-      <div class="container">
+      <div class="container-fluid">
         <button id="bars"><i class="fa-solid fa-bars"></i></button>
         <form class="d-flex" role="search">
           <input class="form-control" type="search" placeholder="Search" aria-label="Search">
@@ -43,7 +43,7 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid">
       <h2>Dashboard</h2>
       <div class="cards">
         <div class="card" style="width: 220px;">
@@ -244,9 +244,11 @@
     const toggleButton = document.getElementById('bars');
     const sidebar = document.querySelector('.menu');
     const mainContent = document.getElementById('main');
+    const active = document.querySelector('.active');
 
     toggleButton.addEventListener('click', () => {
       sidebar.classList.toggle('collapsed');
+      active.classList.toggle('collapsed');
       mainContent.classList.toggle('expanded');
     });
 
