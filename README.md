@@ -23,3 +23,6 @@ This project is an **Admin Dashboard** utilizing HTML, CSS, and JavaScript to cr
 - **Search Functionality**: Includes a search bar in the navbar, allowing users to perform quick searches within the dashboard.
 
 - **Bootstrap Framework**: Integrates Bootstrap to streamline the design and layout of components, providing a consistent and visually appealing appearance.
+## Live Website
+
+You can access the live version of the Admin Dashboard [here](https://sonidhruv26.github.io/Admin-Dashboard).
