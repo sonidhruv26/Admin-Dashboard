@@ -29,20 +29,50 @@
   </section>
 
   <section id="main">
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
       <div class="container-fluid">
-        <button id="bars"><i class="fa-solid fa-bars"></i></button>
-        <form class="d-flex" role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn" type="submit">Search</button>
-        </form>
-        <div class="profile navbar-brand">
-          <i class="fa-solid fa-bell"></i>
-          <a href="#"><img src="assets/pexels-monstera-production-5876695.jpg" alt="profile photo"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button id="bars" class="d-none d-md-block"><i class="fa-solid fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav d-md-none">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Elements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tables</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Forms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Modal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blank</a>
+            </li>
+          </ul>
+          <div class="d-md-flex justify-content-between align-items-center flex-md-grow-1">
+            <form class="d-flex mx-auto" role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" type="submit">Search</button>
+            </form>
+            <div class="profile navbar-brand">
+              <i class="fa-solid fa-bell"></i>
+              <a href="#"><img src="assets/pexels-monstera-production-5876695.jpg" alt="profile photo"></a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
-
     <div class="container-fluid">
       <h2>Dashboard</h2>
       <div class="cards">
@@ -251,13 +281,12 @@
       active.classList.toggle('collapsed');
       mainContent.classList.toggle('expanded');
     });
-
   </script>
 
   <script src="https://kit.fontawesome.com/50a82cfbfd.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
